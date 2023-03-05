@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="~通俗易懂解释： SSH 公钥 私钥的理解 - 知乎 (zhihu.com) ~发送方 接收方接收方提供公匙，自己留私匙 别人想给自己发消息要用公匙加密 自己的私匙用于解密来的消息或进行签名 ~可能的问题：被恶意替换公匙A中存的B的公匙被C恶意替换为C的公匙，C就可以冒充B给A发消息 解决方案​	“证书中心”（certificate authority，简称CA）用私匙加密 “数字证书”（Digi">
+    <meta name="description" content="~通俗易懂解释： SSH 公钥 私钥的理解 - 知乎 (zhihu.com) ~发送方 接收方接收方提供公匙，自己留私匙 别人想给自己发消息要用公匙加密 自己的私匙用于解密来的消息或进行签名 ~可能的问题：被恶意替换公匙A中存的B的公匙被C恶意替换为C的公匙，C就可以解密A用C的公匙加密的信息 解决方案​	“证书中心”（certificate authority，简称CA）用私匙加密 “数字证书”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/2023/03/03/web/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="~通俗易懂解释： SSH 公钥 私钥的理解 - 知乎 (zhihu.com) ~发送方 接收方接收方提供公匙，自己留私匙 别人想给自己发消息要用公匙加密 自己的私匙用于解密来的消息或进行签名 ~可能的问题：被恶意替换公匙A中存的B的公匙被C恶意替换为C的公匙，C就可以冒充B给A发消息 解决方案​	“证书中心”（certificate authority，简称CA）用私匙加密 “数字证书”（Digi">
+<meta property="og:description" content="~通俗易懂解释： SSH 公钥 私钥的理解 - 知乎 (zhihu.com) ~发送方 接收方接收方提供公匙，自己留私匙 别人想给自己发消息要用公匙加密 自己的私匙用于解密来的消息或进行签名 ~可能的问题：被恶意替换公匙A中存的B的公匙被C恶意替换为C的公匙，C就可以解密A用C的公匙加密的信息 解决方案​	“证书中心”（certificate authority，简称CA）用私匙加密 “数字证书”">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-03T15:40:09.761Z">
-<meta property="article:modified_time" content="2023-03-04T14:03:22.940Z">
+<meta property="article:modified_time" content="2023-03-05T16:01:27.540Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          763 字
+          768 字
         
       </span>
     
@@ -277,7 +277,7 @@
 <h4 id="发送方-接收方"><a href="#发送方-接收方" class="headerlink" title="~发送方 接收方"></a>~发送方 接收方</h4><p>接收方提供公匙，自己留私匙</p>
 <p>别人想给自己发消息要用公匙加密</p>
 <p>自己的私匙用于解密来的消息或进行签名</p>
-<h4 id="可能的问题：被恶意替换公匙"><a href="#可能的问题：被恶意替换公匙" class="headerlink" title="~可能的问题：被恶意替换公匙"></a>~可能的问题：被恶意替换公匙</h4><p>A中存的B的公匙被C恶意替换为C的公匙，C就可以冒充B给A发消息</p>
+<h4 id="可能的问题：被恶意替换公匙"><a href="#可能的问题：被恶意替换公匙" class="headerlink" title="~可能的问题：被恶意替换公匙"></a>~可能的问题：被恶意替换公匙</h4><p>A中存的B的公匙被C恶意替换为C的公匙，C就可以解密A用C的公匙加密的信息</p>
 <h5 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h5><p>​	<strong>“证书中心”（certificate authority，简称CA）</strong>用私匙加密 <strong>“数字证书”（Digital Certificate）</strong> (证书包含证书对象的身份信息，与证书对象的公匙绑定，他人无法修改，只能用公匙解读验证) A给B发信息时带上带上自己的数字证书(证书中心加密，只能解读不能修改)，B收到用证书中心公匙解密，进行验证(可以知道所用公匙是不是B的)</p>
 <h4 id=""><a href="#" class="headerlink" title="~"></a>~</h4><p><strong>公钥登录</strong>：很多时候也说public key认证</p>
 <p>​	公钥登录的原理：首先用户将自己的公钥存储在需要登录的远程机器上面，然后登录的时候，远程主机会向用户发送一段随机字符串，接着用户使用自己的私钥加密字符串，并发给远程主机。最后，远程主机使用存储的公钥进行解密，若解密成功，则说明用户可信，准许登录，不在提示输入密码。</p>

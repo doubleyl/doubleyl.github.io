@@ -16,25 +16,33 @@
   <meta name="author" content="doubleyl">
   <meta name="keywords" content="">
   
-    <meta name="description" content="收藏夹里的小程序 ~git rebase换基当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D 从A的另一个分支有新的提交 A-&gt;E-&gt;F 在当前分支用 git rebase anotherBranch 则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支 最后: branch: A-&gt;E-&gt;F-&gt;B-&gt;">
-<meta property="og:type" content="website">
-<meta property="og:title" content="git学习">
-<meta property="og:url" content="https://doubleyl.github.io/git%E5%AD%A6%E4%B9%A0/index.html">
+    <meta name="description" content="1.官网指导：Hexo 目标：学会配置页面，分类，标签，友链 主题：切换大图，文字，网站前图标 进阶：美化，阅读进度，书签等 新建页 hexo new page name hexo g 生成静态文件 hexo -d 部署 2.分类标签">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo">
+<meta property="og:url" content="https://doubleyl.github.io/2023/03/10/hexo/index/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="收藏夹里的小程序 ~git rebase换基当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D 从A的另一个分支有新的提交 A-&gt;E-&gt;F 在当前分支用 git rebase anotherBranch 则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支 最后: branch: A-&gt;E-&gt;F-&gt;B-&gt;">
+<meta property="og:description" content="1.官网指导：Hexo 目标：学会配置页面，分类，标签，友链 主题：切换大图，文字，网站前图标 进阶：美化，阅读进度，书签等 新建页 hexo new page name hexo g 生成静态文件 hexo -d 部署 2.分类标签">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-09T17:56:04.000Z">
-<meta property="article:modified_time" content="2023-03-09T18:12:43.428Z">
+<meta property="og:image" content="d:\learning\blog_native\source\markdownImg\image-20230309224857632.png">
+<meta property="article:published_time" content="2023-03-09T17:56:03.000Z">
+<meta property="article:modified_time" content="2023-03-09T18:13:04.121Z">
 <meta property="article:author" content="doubleyl">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="d:\learning\blog_native\source\markdownImg\image-20230309224857632.png">
   
   
   
-  <title>git学习 - Hexo</title>
+  <title>hexo - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -84,7 +92,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -190,9 +198,49 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="git学习"></span>
+            <span id="subtitle" data-typed-text="hexo"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-03-10 01:56" pubdate>
+          2023年3月10日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          102 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          1 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
 
         
       </div>
@@ -208,61 +256,191 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<article class="page-content">
-  <p>收藏夹里的小程序</p>
-<h4 id="git-rebase换基"><a href="#git-rebase换基" class="headerlink" title="~git rebase换基"></a>~git rebase换基</h4><p>当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D</p>
-<p>从A的另一个分支有新的提交</p>
-<p>A-&gt;E-&gt;F</p>
-<p>在当前分支用 git rebase anotherBranch</p>
-<p>则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支</p>
-<p>最后:</p>
-<p>branch: A-&gt;E-&gt;F-&gt;B-&gt;C-&gt;D</p>
-<p>anotherBranch:A-&gt;E-&gt;F(即不会影响anotherBranch)</p>
-<h4 id="git-cherry-pick-c1-c2-c3-c4"><a href="#git-cherry-pick-c1-c2-c3-c4" class="headerlink" title="~git cherry-pick c1 c2 c3 c4"></a>~git cherry-pick c1 c2 c3 c4</h4><p>将任意其他分支的提交c1 c2 c3 c4复制到当前分支</p>
-<h4 id="git-merge-anotherBranch"><a href="#git-merge-anotherBranch" class="headerlink" title="~git merge anotherBranch"></a>~git merge anotherBranch</h4><p><strong>仍是不影anotherBranch,其最新提交位置不变</strong></p>
-<p>只是在branch分支上调整，将anotherBranch上的提交与branch上最新的提交合并，产生一个新的提交加到branch上</p>
-<h4 id="git-commit-–amend"><a href="#git-commit-–amend" class="headerlink" title="~git commit –amend"></a>~git commit –amend</h4><p>这次提交当作对最新提交的修改，只会使最新提交C2变为C2’ 而不会产生新的提交</p>
-<p>可以通过git rebase -i HEAD~num 来调整分支，将要修改的C2调整到末端，修改后再用一次调整到适当位置</p>
-<p>或 使用cherry-pick 先复制一个C2修改后再将其他的复制过来</p>
-<h4 id="标签tag"><a href="#标签tag" class="headerlink" title="~标签tag"></a>~标签tag</h4><p>作为<strong>锚点</strong></p>
-<p>git tag tagName c1(提交名,没有则为HEAD)</p>
-<p>用于某个重要提交，这个提交较为稳定，一般不变</p>
-<p><strong>git describe <ref></strong> </p>
-<p>产生输出，描述离你最近的锚点 ref为能被git识别成提交记录的引用，不指定则为HEAD</p>
-<p><tag>_ <numCommits>_ g<hash></p>
-<p>tag 表示的是离 ref 最近的标签， numCommits是表示这个 ref与 tag相差有多少个提交记录， hash表示的是你所给定的 ref 所表示的提交记录哈希值的前几位。</p>
-<h4 id="删除提交-git-reset-–hard-HEAD"><a href="#删除提交-git-reset-–hard-HEAD" class="headerlink" title="~删除提交 git reset –hard HEAD"></a>~删除提交 git reset –hard HEAD</h4><p>将返回到上次提交的状态</p>
-<p>–mixed 默认</p>
-<p>移动HEAD指针，改变暂存区，不变工作区</p>
-<p>–soft 回退到某个版本</p>
-<p>仅移动HEAD指针，不改变暂存区和工作区</p>
-<p>–hard撤销提交和未提交的修改内容</p>
-<p>暂存区和工作区都改变，变为上一次提交</p>
-<h4 id="分离头模式"><a href="#分离头模式" class="headerlink" title="~分离头模式"></a>~分离头模式</h4><p>git checkout 目标不是分支而是具体的提交  提交名或引用则进入分离头模式，HEAD与分支分离</p>
-<p>如果进行提交，不会更新分支，当切换到分支时这个提交难以找回</p>
-<p><strong>一般情况下checkout branch 再分支下进行提交</strong></p>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">hexo</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="1-官网指导："><a href="#1-官网指导：" class="headerlink" title="1.官网指导："></a>1.官网指导：</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a></p>
+<p>目标：学会配置页面，分类，标签，友链</p>
+<p>主题：切换大图，文字，网站前图标</p>
+<p>进阶：美化，阅读进度，书签等</p>
+<p>新建页 hexo new page name</p>
+<p>hexo g 生成静态文件</p>
+<p>hexo -d 部署</p>
+<h3 id="2-分类标签"><a href="#2-分类标签" class="headerlink" title="2.分类标签"></a>2.分类标签</h3><p><img src="D:\learning\blog_native\source\markdownImg\image-20230309224857632.png" srcset="/img/loading.gif" lazyload alt="image-20230309224857632"></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/hexo/" class="category-chain-item">hexo</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>hexo</div>
+      <div>https://doubleyl.github.io/2023/03/10/hexo/index/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>doubleyl</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年3月10日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/03/10/git%E5%AD%A6%E4%B9%A0/index/" title="git学习">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">git学习</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/10/web%E5%BC%80%E5%8F%91/index/" title="web开发">
+                        <span class="hidden-mobile">web开发</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
 
 
   
 
-</article>
+
+
+  
 
 
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -356,6 +534,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 

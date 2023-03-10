@@ -46,7 +46,7 @@
     <link href="/2023/03/10/hexo/index/"/>
     <url>/2023/03/10/hexo/index/</url>
     
-    <content type="html"><![CDATA[<h3 id="1-官网指导："><a href="#1-官网指导：" class="headerlink" title="1.官网指导："></a>1.官网指导：</h3><p><a href="https://hexo.io/zh-cn/">Hexo</a></p><p>目标：学会配置页面，分类，标签，友链</p><p>主题：切换大图，文字，网站前图标</p><p>进阶：美化，阅读进度，书签等</p><p>新建页 hexo new page name</p><p>hexo g 生成静态文件</p><p>hexo -d 部署</p><h3 id="2-分类标签"><a href="#2-分类标签" class="headerlink" title="2.分类标签"></a>2.分类标签</h3><p><img src="/%5CmarkdownImg%5Cimage-20230309224857632.png" alt="image-20230309224857632"></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="1-官网指导："><a href="#1-官网指导：" class="headerlink" title="1.官网指导："></a>1.官网指导：</h3><p><a href="https://hexo.io/zh-cn/">Hexo</a></p><p>目标：学会配置页面，分类，标签，友链</p><p>主题：切换大图，文字，网站前图标</p><p>进阶：美化，阅读进度，书签等</p><p>新建页 hexo new page name</p><p>hexo g 生成静态文件</p><p>hexo -d 部署</p><h3 id="2-分类标签"><a href="#2-分类标签" class="headerlink" title="2.分类标签"></a>2.分类标签</h3><p><img src="/markdownImg/image-20230309224857632" alt="lena"></p>]]></content>
     
     
     <categories>

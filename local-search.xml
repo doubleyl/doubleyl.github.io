@@ -4,25 +4,18 @@
   
   
   <entry>
-    <title>post</title>
+    <title>lec3</title>
     <link href="/2023/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/lec3/"/>
     <url>/2023/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/lec3/</url>
     
     <content type="html"><![CDATA[]]></content>
     
     
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>post</title>
-    <link href="/2023/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/lec2/"/>
-    <url>/2023/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/lec2/</url>
-    
-    <content type="html"><![CDATA[<h4 id="4-4中断和异常的区别："><a href="#4-4中断和异常的区别：" class="headerlink" title="4.4中断和异常的区别："></a>4.4中断和异常的区别：</h4><p>中断的引入，是为了支持CPU和设备之间的并行操作，异常的引入是表示CPU执行指令时本身出现了问题。</p><p><strong>同步中断</strong>是指由计算机内部的事件触发的中断，如时钟中断或I&#x2F;O操作完成中断。这些中断需要<strong>时钟来定时触发</strong>，以确保它们在正确的时间发生。</p><p><strong>异步中断</strong>是指由计算机外部事件触发的中断，如用户键盘输入或网络数据包到达。虽然这些事件<strong>不需要时钟来发生</strong>，但是一旦发生，计算机需要使用时钟来处理它们，以确保中断被处理的顺序是正确的。因此，即使异步中断本身不需要时钟，计算机系统在处理这些中断时仍然需要时钟。</p><h4 id="5-4中断源-自愿性中断"><a href="#5-4中断源-自愿性中断" class="headerlink" title="5.4中断源:自愿性中断"></a>5.4中断源:自愿性中断</h4><p>处理器执行<strong>陷入指令</strong>请求OS服务引起，操作系统中又叫做<strong>系统调用</strong></p><p>自愿即程序执行到该部分需要主动请求中断，以调用其他服务</p><h4 id="6-4陷阱与系统陷阱"><a href="#6-4陷阱与系统陷阱" class="headerlink" title="6.4陷阱与系统陷阱"></a>6.4陷阱与系统陷阱</h4><p><strong>“陷阱”<strong>是一种</strong>人为设置的中断</strong>，通常用于指令执行的异常处理。当CPU执行到一个陷阱指令时，会停止正常的指令流程，并转向处理异常的程序。陷阱可以用于实现系统调用、处理硬件故障、以及在操作系统内核中实现调试器等功能。</p><p><strong>“系统陷阱”<strong>是指在执行指令时，由硬件或软件触发的中断。系统陷阱的处理是由操作系统内核负责的，它们通常</strong>用于执行一些特权操作</strong>，例如文件系统访问、进程管理、内存管理等。当出现系统陷阱时，CPU会立即跳转到操作系统内核中的相应处理程序，执行必要的操作，然后返回到原始执行流程。</p><p><strong>虚拟地址异常</strong>虚拟地址异常通常发生在<strong>计算机试图访问不存在的内存页面</strong>时。在这种情况下，<strong>操作系统通常会分配新的内存页面，并重新执行指令</strong>。</p>]]></content>
-    
+    <categories>
+      
+      <category>-计算机操作系统</category>
+      
+    </categories>
     
     
   </entry>

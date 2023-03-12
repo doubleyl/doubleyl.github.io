@@ -16,21 +16,21 @@
   <meta name="author" content="doubleyl">
   <meta name="keywords" content="">
   
-    <meta name="description" content="收藏夹里的小程序 ~git rebase换基当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D 从A的另一个分支有新的提交 A-&gt;E-&gt;F 在当前分支用 git rebase anotherBranch 则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支 最后: branch: A-&gt;E-&gt;F-&gt;B-&gt;">
+    <meta name="description" content="1.b站教程：从0开始带你手撸一套SpringBoot+Vue后台管理系统（2022年最新版）_哔哩哔哩_bilibili">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git学习">
-<meta property="og:url" content="https://doubleyl.github.io/2023/03/10/git%E5%AD%A6%E4%B9%A0/index/index.html">
+<meta property="og:title" content="web开发">
+<meta property="og:url" content="https://doubleyl.github.io/2023/03/10/web%E5%BC%80%E5%8F%91/web%E5%BC%80%E5%8F%91/index.html">
 <meta property="og:site_name" content="doubleyl&#39;s blog">
-<meta property="og:description" content="收藏夹里的小程序 ~git rebase换基当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D 从A的另一个分支有新的提交 A-&gt;E-&gt;F 在当前分支用 git rebase anotherBranch 则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支 最后: branch: A-&gt;E-&gt;F-&gt;B-&gt;">
+<meta property="og:description" content="1.b站教程：从0开始带你手撸一套SpringBoot+Vue后台管理系统（2022年最新版）_哔哩哔哩_bilibili">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-09T17:56:04.000Z">
-<meta property="article:modified_time" content="2023-03-09T18:12:43.428Z">
+<meta property="article:published_time" content="2023-03-09T17:56:02.000Z">
+<meta property="article:modified_time" content="2023-03-12T09:47:05.364Z">
 <meta property="article:author" content="doubleyl">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>git学习 - doubleyl&#39;s blog</title>
+  <title>web开发 - doubleyl&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="git学习"></span>
+            <span id="subtitle" data-typed-text="web开发"></span>
           
         </div>
 
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          984 字
+          61 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          9 分钟
+          1 分钟
         
       </span>
     
@@ -268,43 +268,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">git学习</h1>
+            <h1 style="display: none">web开发</h1>
             
             
               <div class="markdown-body">
                 
-                <p>收藏夹里的小程序</p>
-<h4 id="git-rebase换基"><a href="#git-rebase换基" class="headerlink" title="~git rebase换基"></a>~git rebase换基</h4><p>当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D</p>
-<p>从A的另一个分支有新的提交</p>
-<p>A-&gt;E-&gt;F</p>
-<p>在当前分支用 git rebase anotherBranch</p>
-<p>则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支</p>
-<p>最后:</p>
-<p>branch: A-&gt;E-&gt;F-&gt;B-&gt;C-&gt;D</p>
-<p>anotherBranch:A-&gt;E-&gt;F(即不会影响anotherBranch)</p>
-<h4 id="git-cherry-pick-c1-c2-c3-c4"><a href="#git-cherry-pick-c1-c2-c3-c4" class="headerlink" title="~git cherry-pick c1 c2 c3 c4"></a>~git cherry-pick c1 c2 c3 c4</h4><p>将任意其他分支的提交c1 c2 c3 c4复制到当前分支</p>
-<h4 id="git-merge-anotherBranch"><a href="#git-merge-anotherBranch" class="headerlink" title="~git merge anotherBranch"></a>~git merge anotherBranch</h4><p><strong>仍是不影anotherBranch,其最新提交位置不变</strong></p>
-<p>只是在branch分支上调整，将anotherBranch上的提交与branch上最新的提交合并，产生一个新的提交加到branch上</p>
-<h4 id="git-commit-–amend"><a href="#git-commit-–amend" class="headerlink" title="~git commit –amend"></a>~git commit –amend</h4><p>这次提交当作对最新提交的修改，只会使最新提交C2变为C2’ 而不会产生新的提交</p>
-<p>可以通过git rebase -i HEAD~num 来调整分支，将要修改的C2调整到末端，修改后再用一次调整到适当位置</p>
-<p>或 使用cherry-pick 先复制一个C2修改后再将其他的复制过来</p>
-<h4 id="标签tag"><a href="#标签tag" class="headerlink" title="~标签tag"></a>~标签tag</h4><p>作为<strong>锚点</strong></p>
-<p>git tag tagName c1(提交名,没有则为HEAD)</p>
-<p>用于某个重要提交，这个提交较为稳定，一般不变</p>
-<p><strong>git describe <ref></strong> </p>
-<p>产生输出，描述离你最近的锚点 ref为能被git识别成提交记录的引用，不指定则为HEAD</p>
-<p><tag>_ <numCommits>_ g<hash></p>
-<p>tag 表示的是离 ref 最近的标签， numCommits是表示这个 ref与 tag相差有多少个提交记录， hash表示的是你所给定的 ref 所表示的提交记录哈希值的前几位。</p>
-<h4 id="删除提交-git-reset-–hard-HEAD"><a href="#删除提交-git-reset-–hard-HEAD" class="headerlink" title="~删除提交 git reset –hard HEAD"></a>~删除提交 git reset –hard HEAD</h4><p>将返回到上次提交的状态</p>
-<p>–mixed 默认</p>
-<p>移动HEAD指针，改变暂存区，不变工作区</p>
-<p>–soft 回退到某个版本</p>
-<p>仅移动HEAD指针，不改变暂存区和工作区</p>
-<p>–hard撤销提交和未提交的修改内容</p>
-<p>暂存区和工作区都改变，变为上一次提交</p>
-<h4 id="分离头模式"><a href="#分离头模式" class="headerlink" title="~分离头模式"></a>~分离头模式</h4><p>git checkout 目标不是分支而是具体的提交  提交名或引用则进入分离头模式，HEAD与分支分离</p>
-<p>如果进行提交，不会更新分支，当切换到分支时这个提交难以找回</p>
-<p><strong>一般情况下checkout branch 再分支下进行提交</strong></p>
+                <h3 id="1-b站教程："><a href="#1-b站教程：" class="headerlink" title="1.b站教程："></a>1.b站教程：</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1U44y1W77D/?spm_id_from=333.337.search-card.all.click&vd_source=b71ddcbe3fe48732014fa85cfbf11f3c">从0开始带你手撸一套SpringBoot+Vue后台管理系统（2022年最新版）_哔哩哔哩_bilibili</a></p>
 
                 
               </div>
@@ -323,7 +292,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/git%E5%AD%A6%E4%B9%A0/" class="category-chain-item">git学习</a>
+  <a href="/categories/web%E5%BC%80%E5%8F%91/" class="category-chain-item">web开发</a>
   
   
 
@@ -343,8 +312,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>git学习</div>
-      <div>https://doubleyl.github.io/2023/03/10/git学习/index/</div>
+      <div>web开发</div>
+      <div>https://doubleyl.github.io/2023/03/10/web开发/web开发/</div>
     </div>
     <div class="license-meta">
       
@@ -388,21 +357,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/10/hello/index/" title="hello">
+                      <a href="/2023/03/10/hexo/hexo%E4%BD%BF%E7%94%A8/" title="hexo使用">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">hello</span>
+                        <span class="hidden-mobile">hexo使用</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2023/03/10/hexo/index/" title="hexo">
-                        <span class="hidden-mobile">hexo</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

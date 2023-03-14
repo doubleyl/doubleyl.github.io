@@ -24,7 +24,7 @@
 <meta property="og:description" content="收藏夹里的小程序 ~git rebase换基当前分支branch 从根到最新提交为 A-&gt;B-&gt;C-&gt;D 从A的另一个分支有新的提交 A-&gt;E-&gt;F 在当前分支用 git rebase anotherBranch 则复制BCD 删除branch，再以anotherBranch最新提交为根创建分支 最后: branch: A-&gt;E-&gt;F-&gt;B-&gt;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-09T17:56:04.000Z">
-<meta property="article:modified_time" content="2023-03-14T08:40:50.890Z">
+<meta property="article:modified_time" content="2023-03-14T08:55:11.983Z">
 <meta property="article:author" content="doubleyl">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          984 字
+          1.2k 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          9 分钟
+          11 分钟
         
       </span>
     
@@ -305,6 +305,8 @@
 <h4 id="分离头模式"><a href="#分离头模式" class="headerlink" title="~分离头模式"></a>~分离头模式</h4><p>git checkout 目标不是分支而是具体的提交  提交名或引用则进入分离头模式，HEAD与分支分离</p>
 <p>如果进行提交，不会更新分支，当切换到分支时这个提交难以找回</p>
 <p><strong>一般情况下checkout branch 再分支下进行提交</strong></p>
+<h4 id="本地仓库与远程仓库的同步："><a href="#本地仓库与远程仓库的同步：" class="headerlink" title="~本地仓库与远程仓库的同步："></a>~本地仓库与远程仓库的同步：</h4><p>如果本地仓库和远程仓库都有新的提交，（比如直接在github网站上提交，而本地没有)，那么需要先使用git pull（相当于git fetch+git merge) 将远程仓库内容拉取下来并与本地的合并（合并前需要将工作区的内容add commit,防止合并时工作区新内容丢失)，使得本地与远程同步再进行push。</p>
+<p>在push之前，可能会产生本地仓库与远程仓库冲突，pull后合并后本地会改变。如果有冲突需要在相关文件内进行选择修改，再add commit 提交最终内容。</p>
 
                 
               </div>
